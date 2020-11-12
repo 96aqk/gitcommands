@@ -1,0 +1,29 @@
+//Creates container from the image
+docker run -it -d <image_name>
+
+//Build image
+docker build --tag bulletinboard:1.0
+
+//Run your image as a container
+docker run --publish 8000:8080 --detach --name bb bulletinboard:1.0
+
+//deletes image
+docker rm --force bb
+
+//access the running container
+docker exec -it<container_id> bash
+
+//stops running container
+docker stop <container_id>
+
+//kills container
+docker kill <container_id>
+
+//deletes stopped container
+docker rm <container_id>
+
+//deletes image from local storage
+docker rmi
+
+//creates a new image over local system over an edited container.
+docker commit <container_id> <username/image_name>

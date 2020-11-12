@@ -1,0 +1,41 @@
+uim.exe /dev/tty 5 LOAD_CONFIG NDC0100 0015 ID 0100
+uim.exe /dev/tty 5 LOAD_KEY NDC0100 0015 ID 0100
+
+
+// GREP COMMAND FOR PARTICULAR EXTENSION
+grep -r --include=\*.txt 'searchterm' ./
+
+
+//SIZE OF DIRECTORY
+du -sh 
+df -h
+
+//DIFFERENCE IN TWO DIRECTORIES
+diff -qr directory-1/ directory-2/ 
+
+ Asad Tps: Ip : 192.168.72.2
+[3/16, 9:52 AM] Asad Tps: Port : 1724 or 1726
+
+
+./initatm.exe after changing values in TM tables.
+
+//TAR COMMAND
+tar -cjvf binaries.tar.bz2 ndc.exe atm.exe NDCIMGE_EMV
+//UNTAR COMMAND
+tar –xvf mytarname.tar
+
+//REMOVE ALL FILES STARTING WITH PARTICULAR NAME 
+rm -rf pattern*
+
+
+//wsdl compilation command
+wsdl2h -s -o SMSWSCALLER.h SMSWSCALLER.wsdl
+wsdl2h -N ns1 -s -o SMSWSCALLER.h SMSWSCALLER.wsdl
+soapcpp2 -i -C SMSWSCALLER.h
+
+
+when making modules. we need to set the home directoy path to the folder we have created. For this we go to vi ~/.bash_profile file and change the homepath
+to the folder we have just created.
+etc/hosts
+
+
